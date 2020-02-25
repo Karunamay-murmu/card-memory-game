@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+label,
+option {
+  font-family: "Lato", sans-serif;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards-grid-4 {
+  width: 180px;
+  -ms-grid-columns: (80px)[2];
+      grid-template-columns: repeat(2, 80px);
+}
+
+.cards-grid-6 {
+  width: 280px;
+  -ms-grid-columns: (80px)[3];
+      grid-template-columns: repeat(3, 80px);
+}
+
+.cards-grid-12 {
+  width: 280px;
+  -ms-grid-columns: (80px)[3];
+      grid-template-columns: repeat(3, 80px);
+}
+
+.cards-grid-16 {
+  width: 380px;
+  -ms-grid-columns: (80px)[4];
+      grid-template-columns: repeat(4, 80px);
+}
+
+#cards-grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 100px auto 0;
+  grid-gap: 20px;
+}
+
+#cards-grid .grid-item {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  background-color: lightgray;
+  border-radius: 5px;
+  position: relative;
+}
+
+#cards-grid .grid-item .grid-item-image {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+#cards-grid .grid-item .grid-item-backSide {
+  background-color: gray;
+  position: absolute;
+  top: 0%;
+}
+
+#cards-grid .grid-item .displayImage {
+  z-index: -1;
+}
+
+.grid-item:hover {
+  -webkit-box-shadow: gray 0px 0px 10px;
+          box-shadow: gray 0px 0px 10px;
+  cursor: pointer;
+}
+
+#user-options {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+}
+
+#user-options label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #404040;
+}
+
+.select {
+  padding: 5px 0;
+  font-size: 1rem;
+  margin-left: 10px;
+  border-radius: 3px;
+}
+
+.start-button {
+  padding: 8px 20px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #404040;
+}
+
+.start-again {
+  text-align: center;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=style.css.map */

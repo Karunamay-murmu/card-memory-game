@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+label,
+option {
+  font-family: "Lato", sans-serif;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.cards-grid-4 {
+  width: 180px;
+  grid-template-columns: repeat(2, 80px);
+}
+.cards-grid-6 {
+  width: 280px;
+  grid-template-columns: repeat(3, 80px);
+}
+.cards-grid-12 {
+  width: 280px;
+  grid-template-columns: repeat(3, 80px);
+}
+.cards-grid-16 {
+  width: 380px;
+  grid-template-columns: repeat(4, 80px);
+}
+#cards-grid {
+  display: grid;
+  margin: 100px auto 0;
+  grid-gap: 20px;
+  // position: absolute;
+  // top: 50%;
+
+  .grid-item {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background-color: lightgray;
+    border-radius: 5px;
+    position: relative;
+
+    .grid-item-image {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+    }
+
+    .grid-item-backSide {
+      background-color: gray;
+      position: absolute;
+      top: 0%;
+    }
+
+    .displayImage {
+      z-index: -1;
+    }
+  }
+}
+
+.grid-item:hover {
+  box-shadow: gray 0px 0px 10px;
+  cursor: pointer;
+}
+
+#user-options {
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -30%);
+  label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #404040;
+  }
+}
+
+.select {
+  padding: 5px 0;
+  font-size: 1rem;
+  margin-left: 10px;
+  border-radius: 3px;
+}
+.start-button {
+  padding: 8px 20px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #404040
+}
+.start-again{
+  text-align: center;
+  margin-top: 30px;
+}
