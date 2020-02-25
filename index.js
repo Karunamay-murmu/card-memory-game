@@ -218,7 +218,11 @@ start.addEventListener('click', () => {
             buttonDiv.appendChild(button)
             cardsGrid.after(buttonDiv);
 
-            return 'gameFinish';
+            button.addEventListener('click', () => {
+                cardsGrid.style.display = 'none';
+                button.style.display = 'none';
+                option.style.display = 'flex'
+            })
         }
         //*return home page*//
 
