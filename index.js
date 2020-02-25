@@ -152,7 +152,7 @@ start.addEventListener('click', () => {
 
         /*showing images for 5 sec*/
         (function initialDisplay() {
-            const timer = 2500;
+            const timer = 5000;
             setTimeout(() => {
                 backImage.forEach(element => {
                     element.classList.remove('displayImage');
